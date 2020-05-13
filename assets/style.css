@@ -1,5 +1,6 @@
 body {
    font-family: 'Montserrat', sans-serif;
+   background-color: rgb(218, 238, 227);
 }
 
 .hero-img {
@@ -7,7 +8,7 @@ body {
    background-image: url("./images/farm.jpg");
  
    /* Set a specific height */
-   height: 500px;
+   height: 800px;
 
    /* Position and center the image to scale nicely on all screens */
    background-position: center;
@@ -17,7 +18,7 @@ body {
  }
 
 .logo-img {
-   max-height: 150px;
+   max-height: 100px;
    display: inline;
 }
 
