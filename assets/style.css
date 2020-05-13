@@ -1,49 +1,71 @@
 body {
-   font-family: 'Montserrat', sans-serif;
-   background-color: rgb(218, 238, 227);
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(218, 238, 227);
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .hero-img {
-   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-   background-image: url("./images/farm.jpg");
- 
-   /* Set a specific height */
-   height: 800px;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("./images/farm.jpg");
 
-   /* Position and center the image to scale nicely on all screens */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
- }
+  /* Set a specific height */
+  height: 800px;
 
- .hero-title {
-    font-size: 72px;
-    font-weight: 700;
- }
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__first-row {
+  height: 75%;
+}
+
+.hero-title {
+  font-size: 66px;
+  font-weight: 700;
+}
 
 .logo-img {
-   max-height: 80px;
-   display: inline;
-   position: relative;
-   bottom: 20px;
+  max-height: 80px;
+  display: inline;
 }
 
 .cta-btn {
-   max-width: 200px;
+  color: white;
+  background-color: rgb(0, 82, 0);
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 24px;
+  max-width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: width .2s ease-in-out;
+  transition: height .2s ease-in-out
 }
 
-.faq-question {
+.cta-btn:hover {
+   text-transform: none;
+   color: white !important;
+}
 
+/* .faq-question {
 }
 
 .faq-answer {
+} */
 
-}
 /* TODO: mediaquery/bootstrap class to change inline display to block on small screens for hero section stuff */
 /* TODO: mediaquery remove bottom poisition boost on logo-img on small screens */
-@media only screen and (max-width: 600px) {
-   .logo-img {
-     display: none !important;
-   }
- }
+@media only screen and (max-width: 1000px) {
+  .logo-img {
+    display: none !important;
+  }
+}
