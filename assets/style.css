@@ -17,13 +17,33 @@ body {
    position: relative;
  }
 
+ .hero-title {
+    font-size: 72px;
+    font-weight: 700;
+ }
+
 .logo-img {
-   max-height: 100px;
+   max-height: 80px;
    display: inline;
+   position: relative;
+   bottom: 20px;
 }
 
 .cta-btn {
    max-width: 200px;
 }
 
+.faq-question {
+
+}
+
+.faq-answer {
+
+}
 /* TODO: mediaquery/bootstrap class to change inline display to block on small screens for hero section stuff */
+/* TODO: mediaquery remove bottom poisition boost on logo-img on small screens */
+@media only screen and (max-width: 600px) {
+   .logo-img {
+     display: none !important;
+   }
+ }
