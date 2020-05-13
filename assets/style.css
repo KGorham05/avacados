@@ -16,4 +16,9 @@ body {
    position: relative;
  }
 
+.logo-img {
+   max-height: 150px;
+   display: inline;
+}
 
+/* TODO: mediaquery/bootstrap class to change inline display to block on small screens for hero section stuff */
