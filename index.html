@@ -51,6 +51,7 @@
                <h1 class="hero-text d-inline mx-3">Farmers To Families</h1>
                <img class="logo-img mx-3 d-inline"
                   src="https://d2v9ipibika81v.cloudfront.net/uploads/sites/82/2016/10/usda-logo.jpg" alt="USDA logo">
+               <a href="#order-form" class="cta-btn btn btn-primary d-block mx-auto">Order Now!</a>
             </div>
          </div>
       </div>
@@ -111,7 +112,9 @@
          <div class="row">
             <div class="col-12">
                <p>How can I learn more about the program?</p>
-               <p>You can read more about the Farmers to Families program <a href="">here, on the USDA website</a></p>
+               <p>You can read more about the Farmers to Families program on the <a
+                     href="https://www.ams.usda.gov/selling-food-to-usda/farmers-to-families-food-box">USDA website</a>.
+               </p>
             </div>
          </div>
          <div class="row">
@@ -178,8 +181,10 @@
          </div>
          <div class="row">
             <div class="col-12">
-               <p>How do I know you're/this is legitimate?</p>
-               <p>You can read more about the Farmers to Families program on the <a href="https://www.ams.usda.gov/selling-food-to-usda/farmers-to-families-food-box">USDA Website</a>. You can also find our farm, California Avocadoes Direct, on the <a>list of approved vendors</a>.</p>
+               <p>How do I know you're legitimate?</p>
+               <p>You can also find our farm, California Avocadoes Direct, on the <a
+                     href="https://www.ams.usda.gov/sites/default/files/media/AnnouncementofContractAwards.pdf">annoucement
+                     of contract awards</a>.</p>
             </div>
          </div>
 
@@ -188,13 +193,29 @@
       <!-- Items Available -->
       <div id="items-available">
          <div class="row">
-            <div class="col-12 text-center mt-5">
+            <div class="col-12 text-center my-5">
                <h1>Available Items</h1>
             </div>
          </div>
          <div class="row">
-            <div class="col-12">
-
+            <div class="col-sm-4">
+               <ul>
+                  <li>Avocadoes</li>
+                  <li>Carrots</li>
+                  <li>Cucumbers</li>
+                  <li>Apples</li>
+                  <li>Sweet Potatoes</li>
+                  <li>Potatoes</li>
+                  <li>Pears</li>
+                  <li>Tomatoes</li>
+                  <li>Green Bell Peppers</li>
+                  <li>Onions</li>
+                  <li>Limes</li>
+                  <li>Oranges</li>
+                  <li>Tangerines</li>
+                  <li>Corn</li>
+                  <li>Cabbage</li>
+               </ul>
             </div>
          </div>
       </div>
@@ -202,20 +223,90 @@
       <!-- Order -->
       <div id="order-form">
          <div class="row">
-            <div class="col-12 text-center mt-5">
+            <div class="col-12 text-center my-5">
                <h1>Order Now</h1>
             </div>
          </div>
+         <div class="row">
+            <div class="col-12">
+               <div class="card">
+                  <div class="card-body">
+                     <div class="form">
+                        <div class="form-group">
+                           <label for="num-boxes">How many boxes do you want?</label>
+                           <input class="form-control" type="text" placeholder="# boxes" id="num-boxes">
+                        </div>
+                        <div class="form-group">
+                           <label for="delivery-date">When do you want the boxes delivered?</label>
+                           <input class="form-control" type="text" placeholder="Delivery Date" id="delivery-date">
+                        </div>
+                        <div class="form-group">
+                           <label for="recurring">Will this be a recurring order? If yes, how often?</label>
+                           <input class="form-control" type="text" placeholder="Recurring?" id="recurring">
+                        </div>
+                        <div class="form-group">
+                           <label for="501c3">Please provide information about your organization so that we can verify
+                              your 501(c)(3) status</label>
+                           <textarea class="form-control" rows="3" placeholder="501(c)(3) Info" id="501c3"></textarea>
+                        </div>
+                        <div class="form-group">
+                           <label for="contact-name">Contact Name</label>
+                           <input class="form-control" type="text" placeholder="Contact Name" id="contact-name">
+                        </div>
+                        <div class="form-group">
+                           <label for="contact-phone">Contact Phone Number</label>
+                           <input class="form-control" type="tel" placeholder="888-888-8888" id="contact-phone"
+                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div class="form-group">
+                           <label for="email-input">Email address</label>
+                           <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp"
+                              placeholder="Enter email">
+                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                        </div>
+                        <div class="form-group">
+                           <label for="delivery-address">Delivery Address</label>
+                           <input class="form-control" type="text" placeholder="123 Any St. USA CA 90210"
+                              id="delivery-address">
+                        </div>
+                        <div class="form-group">
+                           <label for="special-instructions">Any special instructions?</label>
+                           <input class="form-control" type="text" placeholder="Not Required" id="special-instructions">
+                        </div>
+                        <button type="submit" id="submit-order-btn" class="btn btn-primary">Submit</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
       </div>
 
       <!-- Contact -->
-      <div class="row">
-         <div class="col-12 text-center mt-5">
-            <h1>Contact Us</h1>
+      <div id="contact">
+
+         <div class="row">
+            <div class="col-12 text-center mt-5 mb-2">
+               <h1>Contact Us</h1>
+            </div>
          </div>
+         <div class="row text-center">
+            <div class="col-4 offset-4">
+               <div class="card mb-5">
+                  <div class="card-body">
+                     <p>123 Any St.</p>
+                     <p>Carlsbad, CA 92078</p>
+                     <p>858-555-1234</p>
+                     <p><a href="mailto:emailaddress@eyz.com">info@avacadosdirect.com</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
       </div>
-
-
    </div>
 
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -228,6 +319,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"></script>
    <script src="./assets/app.js"></script>
+   <!-- 1/1/1990 bday on new email -->
 </body>
 
 </html>

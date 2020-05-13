@@ -22,4 +22,8 @@ body {
    display: inline;
 }
 
+.cta-btn {
+   max-width: 200px;
+}
+
 /* TODO: mediaquery/bootstrap class to change inline display to block on small screens for hero section stuff */
