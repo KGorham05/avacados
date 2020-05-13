@@ -1,2 +1,2 @@
-# avacados
-Single page avacado informational website
+# Avocadoes
+Single page avacado informational website. 
