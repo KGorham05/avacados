@@ -8,6 +8,7 @@ $(document).ready(function () {
        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
            .then(response => {
                console.log('Success!', response)
+               alert('Success! Order placed!');
                // empty form fields
                $('#num-boxes').val('');
                $('#delivery-date').val('');
