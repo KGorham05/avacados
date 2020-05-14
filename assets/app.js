@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    console.log('Hello world!2');
+    console.log('Hello world!3');
     const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ykRXhZW2BWB2TltdfrAkqneAX-dUrvnZ2yciGLotYIiBTV8/exec'
-    const form = $("#order-details")
+    const form = document.forms['order-details']
 
-    form.submit(e => {
+    form.addEventListener('submit', e => {
        e.preventDefault()
        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
            .then(response => {
