@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log('Hello world!');
+    console.log('Hello world!2');
     const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ykRXhZW2BWB2TltdfrAkqneAX-dUrvnZ2yciGLotYIiBTV8/exec'
     const form = $("#order-details")
 
