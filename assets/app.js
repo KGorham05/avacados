@@ -1,5 +1,5 @@
-// $(document).ready(function () {
-
+$(document).ready(function () {
+    console.log('Hello world!');
 //    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ykRXhZW2BWB2TltdfrAkqneAX-dUrvnZ2yciGLotYIiBTV8/exec'
 //    const form = document.forms['order-details']
 
@@ -24,4 +24,4 @@
 //                alert('Oh no... something went wrong! Please try again later!')
 //            })
 //    })
-// });
+});

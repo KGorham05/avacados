@@ -1,2 +1,2 @@
 # Avocadoes
-Single page avacado informational website. 
+Single page avocado informational website. 
