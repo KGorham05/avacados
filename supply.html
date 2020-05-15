@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/supply.css">
+   <title>Supply Us</title>
+</head>
+
+<body>
+
+   <!-- Nav -->
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+      <a class="navbar-brand" href="./index.html">Farmers to Families</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="./index.html#program-info">Program Info</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./index.html#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./index.html#items-available">Items Available</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./index.html#order-form">Order</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./index.html#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active" href="#">Supply Us</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+   <div class="container">
+
+      <!-- Supply Form -->
+      <div id="supplyform">
+         <div class="row">
+            <div class="col-12 text-center my-5">
+               <h1 class="content-title" id="supplyform-title">Supply Us</h1>
+            </div>
+         </div>
+         <div class="row mb-5">
+            <div class="col-12">
+               <div class="card shadow">
+                  <div class="card-title text-center">
+                     <h3 class="mt-4">Want to help supply our boxes?</h3>
+                     <h3 class="mt-2">Enter your information below!</h3>
+                  </div>
+                  <div class="card-body">
+                     <form class="form" name="submit-to-google-sheet">
+                        <div class="form-group">
+                           <label for="company-name">Company Name</label>
+                           <input class="form-control" type="text" name="company-name" id="company-name">
+                        </div>
+                        <div class="form-group">
+                           <label for="contact-name">Contact Name</label>
+                           <input class="form-control" type="text" placeholder="John Doe" name="contact-name"
+                              id="contact-name">
+                        </div>
+                        <div class="form-group">
+                           <label for="phone">Contact Phone Number</label>
+                           <input class="form-control" type="tel" placeholder="Format as 888-888-8888" id="phone"
+                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone">
+                        </div>
+                        <div class="form-group">
+                           <label for="email">Email</label>
+                           <input class="form-control" type="email" placeholder="email@domain.com" name="email"
+                              id="email">
+                           <small id="emailHelp" class="form-text text-muted">We'll never share your contact info with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                           <label for="produce-offering">Produce Offering</label>
+                           <input class="form-control" type="text" placeholder="Apples, Cucumbers..." name="produce-offering" id="produce-offering">
+                        </div>
+                        <div class="form-group">
+                           <label for="full-load-pricing">Direct FOB Full Load Pricing</label>
+                           <input class="form-control" type="text" placeholder="$" name="full-load-pricing" id="full-load-pricing">
+                        </div>
+                        <div class="form-group">
+                           <label for="pack-config">Pack Configuration</label>
+                           <input class="form-control" type="text" placeholder="Box, bag, etc." name="pack-config" id="pack-config">
+                        </div>
+                        <div class="form-group">
+                           <label for="total-load-qty">Total Load Qty (Count in Configuration)</label>
+                           <input class="form-control" type="text" placeholder="#" name="total-load-qty" id="total-load-qty">
+                        </div>
+                        <div class="form-group">
+                           <label for="cost-per-truck">Cost for 1 Truckload</label>
+                           <input class="form-control" type="text" placeholder="$" name="cost-per-truck" id="cost-per-truck">
+                        </div>
+                        <div class="form-group">
+                           <label for="cost-per-lb">Cost per lb</label>
+                           <input class="form-control" type="text" placeholder="If offering more then one commodity, please specifiy" name="cost-per-lb" id="cost-per-lb">
+                        </div>
+                        <div class="form-group">
+                           <label for="num-loads-now">Number of Immediatly Available Loads</label>
+                           <input class="form-control" type="text" placeholder="#" name="num-loads-now" id="num-loads-now">
+                        </div>
+                        <div class="form-group">
+                           <label for="num-loads-next-week">Number of Loads Available in 7 days</label>
+                           <input class="form-control" type="text" placeholder="#" name="num-loads-next-week" id="num-loads-next-week">
+                        </div>
+                        <div class="form-group">
+                           <label for="date-of-offering">Date of Offering/Solicitation</label>
+                           <input class="form-control" type="text" placeholder="1/1/2020" name="date-of-offering" id="date-of-offering">
+                        </div>
+                        <div class="form-group">
+                           <label for="valid-through-date">Valid Through Date</label>
+                           <input class="form-control" type="text" placeholder="1/1/2020" name="valid-through-date" id="valid-through-date">
+                        </div>
+                        <button type="submit" id="submit-order-btn" class="btn btn-primary">Submit</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+   <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+   <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+   <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+   <script src="./assets/js/supply.js"></script>
+</body>
+
+</html>

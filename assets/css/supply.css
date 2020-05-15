@@ -1,0 +1,11 @@
+.content-title {
+   text-transform: uppercase;
+   font-size: 48px;
+   font-weight: 600;
+   color: darkgreen;
+   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+ }
+
+ #supplyform-title {
+   margin-top: 40px;
+ }
