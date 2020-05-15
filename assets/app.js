@@ -10,15 +10,15 @@ $(document).ready(function () {
         console.log("Success!", response);
         alert("Success! Order placed!");
         // empty form fields
-        //    $('#num-boxes').val('');
-        //    $('#delivery-date').val('');
-        //    $('#recurring').val('');
-        //    $('#501c3').val('');
-        //    $('#contact-name').val('');
-        //    $('#contact-phone').val('');
-        //    $('#contact-email').val('');
-        //    $('#delivery-address').val('');
-        //    $('#special-instructions').val('');
+           $('#num-boxes').val('');
+           $('#delivery-date').val('');
+           $('#recurring').val('');
+           $('#501c3').val('');
+           $('#contact-name').val('');
+           $('#contact-phone').val('');
+           $('#contact-email').val('');
+           $('#delivery-address').val('');
+           $('#special-instructions').val('');
       })
       .catch((error) => {
         console.error("Error!", error.message);
