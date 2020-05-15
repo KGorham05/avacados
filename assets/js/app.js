@@ -8,7 +8,7 @@ $(document).ready(function () {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
         console.log("Success!", response);
-        alert("Success! Order placed!");
+        alert("Success! In order to fulfill your order, we also require you to email a pdf/or jpg document showing your current 501(c)(3) status to our email at farmertofamilies@gmail.com");
         // empty form fields
            $('#num-boxes').val('');
            $('#delivery-date').val('');
@@ -19,6 +19,7 @@ $(document).ready(function () {
            $('#contact-email').val('');
            $('#delivery-address').val('');
            $('#special-instructions').val('');
+           $('#org-name').val('');
       })
       .catch((error) => {
         console.error("Error!", error.message);
@@ -26,4 +27,3 @@ $(document).ready(function () {
       });
   });
 });
-

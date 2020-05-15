@@ -28,7 +28,7 @@ body {
 }
 
 .hero-title {
-  font-size: 66px;
+  font-size: 120px;
   font-weight: 700;
   text-transform: capitalize;
   color: darkgreen;
@@ -45,12 +45,12 @@ body {
   background-color: rgb(255, 196, 0);
   border: 1px solid white;
   border-radius: 20px;
-  font-size: 24px;
+  font-size: 40px;
   max-width: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
@@ -73,8 +73,7 @@ body {
   font-style: italic;
 }
 
-.faq-answer {
-}
+
 
 /* TODO: mediaquery/bootstrap class to change inline display to block on small screens for hero section stuff */
 /* TODO: mediaquery remove bottom poisition boost on logo-img on small screens */
