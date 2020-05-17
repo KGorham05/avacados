@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    <link rel="stylesheet" href="./assets/css/supply.css">
-   <title>Supply Us</title>
+   <title>Transporters</title>
 </head>
 
 <body>
@@ -37,10 +37,10 @@
                <a class="nav-link" href="./index.html#contact">Contact</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link active" href="#">Supply Us</a>
+               <a class="nav-link" href="./supply.html">Supply Us</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="./transporters.html">Transporters</a>
+               <a class="nav-link active" href="./transporters.html">Transporters</a>
             </li>
          </ul>
       </div>
@@ -52,15 +52,14 @@
       <div id="supplyform">
          <div class="row">
             <div class="col-12 text-center my-5">
-               <h1 class="content-title" id="supplyform-title">Supply Us</h1>
+               <h1 class="content-title" id="supplyform-title">Transporters</h1>
             </div>
          </div>
          <div class="row mb-5">
             <div class="col-12">
                <div class="card shadow">
                   <div class="card-title text-center">
-                     <h3 class="mt-4">Want to supply produce for our food boxes?</h3>
-                     <h3 class="mt-2">Empty boxes also wanted</h3>
+                     <h3 class="mt-4">Help us ship food boxes!</h3>
                   </div>
                   <div class="card-body">
                      <form class="form" name="submit-to-google-sheet">
@@ -69,72 +68,61 @@
                            <input class="form-control" type="text" name="company-name" id="company-name">
                         </div>
                         <div class="form-group">
+                           <label for="address">Address</label>
+                           <input class="form-control" type="text" name="address"
+                              id="address">
+                        </div>
+                        <div class="form-group">
+                           <label for="website">Website</label>
+                           <input class="form-control" type="text" name="website"
+                              id="website">
+                        </div>
+                        <div class="form-group">
                            <label for="contact-name">Contact Name</label>
-                           <input class="form-control" type="text" placeholder="John Doe" name="contact-name"
+                           <input class="form-control" type="text" name="contact-name"
                               id="contact-name">
                         </div>
                         <div class="form-group">
-                           <label for="phone">Contact Phone Number</label>
-                           <input class="form-control" type="tel" placeholder="Format as 888-888-8888" id="phone"
+                           <label for="phone">Contact Phone Number (xxx-xxx-xxxx)</label>
+                           <input class="form-control" type="tel" placeholder="888-888-8888" id="phone"
                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone">
                         </div>
                         <div class="form-group">
                            <label for="email">Email</label>
                            <input class="form-control" type="email" placeholder="email@domain.com" name="email"
                               id="email">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your contact info with anyone else.</small>
+                           <small id="emailHelp" class="form-text text-muted">We'll never share your contact info with
+                              anyone else.</small>
+                        </div>                     
+                        <div class="form-group">
+                           <label for="equipment">What transporation equipment do you have available?</label>
+                           <input class="form-control" type="text" placeholder="53' trailer reefer with liftgate, 26' bobtail with liftgate" name="equipment"
+                              id="equipment">
+                        </div>                        
+                        <div class="form-group">
+                           <label for="region">What region(s) can you service?</label>
+                           <input class="form-control" type="text" name="region"
+                              id="region">
+                        </div>                       
+                        <div class="form-group">
+                           <label for="cold-storage">Do you have cold storage facilities? If so, where?</label>
+                           <input class="form-control" type="text" placeholder="Yes/No, location" name="cold-storage"
+                              id="cold-storage">
                         </div>
                         <div class="form-group">
-                           <label for="produce-offering">Produce Offering</label>
-                           <input class="form-control" type="text" placeholder="Apples, Cucumbers..." name="produce-offering" id="produce-offering">
+                           <label for="cold-storage-capacity">What is the capacity of your cold storage?</label>
+                           <input class="form-control" type="text" name="cold-storage-capacity"
+                              id="cold-storage-capacity">
                         </div>
                         <div class="form-group">
-                           <label for="opportuinty-produce">Opportunity Produce Offering</label>
-                           <input class="form-control" type="text" name="opportuinty-produce" id="opportuinty-produce">
+                           <label for="temp-control">What is the temperature control?</label>
+                           <input class="form-control" type="text" name="temp-control"
+                              id="temp-control">
                         </div>
                         <div class="form-group">
-                           <label for="shelf-life">Remaining Shelf Life?</label>
-                           <input class="form-control" type="text" name="shelf-life" id="shelf-life">
-                        </div>
-                        <div class="form-group">
-                           <label for="box-offering">Empty Box Offering</label>
-                           <input class="form-control" type="text" name="box-offering" id="box-offering">
-                        </div>
-                        <div class="form-group">
-                           <label for="full-load-pricing">Direct FOB Full Load Pricing</label>
-                           <input class="form-control" type="text" placeholder="$" name="full-load-pricing" id="full-load-pricing">
-                        </div>
-                        <div class="form-group">
-                           <label for="pack-config">Pack Configuration</label>
-                           <input class="form-control" type="text" placeholder="Box, bag, etc." name="pack-config" id="pack-config">
-                        </div>
-                        <div class="form-group">
-                           <label for="total-load-qty">Total Load Qty (Count in Configuration)</label>
-                           <input class="form-control" type="text" placeholder="#" name="total-load-qty" id="total-load-qty">
-                        </div>
-                        <div class="form-group">
-                           <label for="cost-per-truck">Cost for 1 Truckload</label>
-                           <input class="form-control" type="text" placeholder="$" name="cost-per-truck" id="cost-per-truck">
-                        </div>
-                        <div class="form-group">
-                           <label for="cost-per-lb">Cost per lb</label>
-                           <input class="form-control" type="text" placeholder="If offering more than one commodity, please specifiy" name="cost-per-lb" id="cost-per-lb">
-                        </div>
-                        <div class="form-group">
-                           <label for="num-loads-now">Number of Immediatly Available Loads</label>
-                           <input class="form-control" type="text" placeholder="#" name="num-loads-now" id="num-loads-now">
-                        </div>
-                        <div class="form-group">
-                           <label for="num-loads-next-week">Number of Loads Available in 7 days</label>
-                           <input class="form-control" type="text" placeholder="#" name="num-loads-next-week" id="num-loads-next-week">
-                        </div>
-                        <div class="form-group">
-                           <label for="date-of-offering">Date of Offering/Solicitation</label>
-                           <input class="form-control" type="text" placeholder="1/1/2020" name="date-of-offering" id="date-of-offering">
-                        </div>
-                        <div class="form-group">
-                           <label for="valid-through-date">Valid Through Date</label>
-                           <input class="form-control" type="text" placeholder="1/1/2020" name="valid-through-date" id="valid-through-date">
+                           <label for="certifications">Any certifications?</label>
+                           <input class="form-control" type="text" name="certifications"
+                              id="certifications">
                         </div>
                         <button type="submit" id="submit-order-btn" class="btn btn-primary">Submit</button>
                      </form>
@@ -156,7 +144,9 @@
    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-   <script src="./assets/js/supply.js"></script>
+   <script src="./assets/js/transport.js"></script>
+
+
 </body>
 
 </html>

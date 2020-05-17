@@ -9,6 +9,10 @@ body {
   padding-right: 0px !important;
 }
 
+.nav-link, .navbar-brand {
+  font-weight: 600;
+}
+
 .hero-img {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("../images/farm.jpg");
