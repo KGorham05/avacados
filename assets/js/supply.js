@@ -28,6 +28,9 @@ $(document).ready(function () {
             $('#num-loads-next-week').val('');
             $('#date-of-offering').val('');
             $('#valid-through-date').val('');
+            $('#opportuinty-produce').val('');
+            $('#shelf-life').val('');
+            $('#box-offering').val('');
        })
        .catch((error) => {
          console.error("Error!", error.message);
