@@ -98,3 +98,22 @@ body {
     display: none !important;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .logo-img {
+    display: none !important;
+  }
+
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .cta-btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    bottom: 60px;
+  }
+}
