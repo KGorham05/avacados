@@ -9,6 +9,10 @@ body {
   padding-right: 0px !important;
 }
 
+.on-hold {
+  font-size: 72px !important;
+}
+
 .navbar {
   background-color: darkgreen !important;
 }
@@ -40,7 +44,15 @@ body {
 }
 
 .hero__first-row {
-  height: 75%;
+  height: 60%;
+}
+
+.red-bg {
+  background-color: red;
+} 
+.white-text {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 .hero-title {
