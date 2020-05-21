@@ -34,7 +34,7 @@ body {
   background-image: url("../images/farm.jpg");
 
   /* Set a specific height */
-  height: 800px;
+  /* height: 800px; */
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -47,6 +47,11 @@ body {
   height: 60%;
 }
 
+.hold-card {
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px;
+}
 .red-bg {
   background-color: red;
 } 
@@ -61,6 +66,8 @@ body {
   text-transform: capitalize;
   color: darkgreen;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+  position: relative;
+  top: 100px;
 }
 
 .logo-img {
